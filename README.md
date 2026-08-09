@@ -60,7 +60,7 @@ public class Developer
 
 | Project | Description | Tech |
 |---|---|---|
-| 🏗️ **[Project Name Here]** | Fullstack ASP.NET Core web application built with EF Core and SQL Server | ASP.NET Core, EF Core, SQL Server |
+| 🏗️ **[ HRMS Web App - CRUD & Auth Module]** | Fullstack ASP.NET Core web application built with EF Core and SQL Server | ASP.NET Core, EF Core, SQL Server |
 | 🌐 **[Project Name Here]** | RESTful Web API built with ASP.NET Core and C# | C#, ASP.NET Core Web API |
 | 📊 **[Project Name Here]** | Interactive fullstack app using Blazor and EF Core | Blazor, EF Core |
 
