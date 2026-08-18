@@ -87,7 +87,7 @@ public class Developer
 
 ## 🌐 Connect With Me
 
-[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white "Mubasher Jam on LinkedIn")](https://www.linkedin.com/in/your-linkedin-here)
+[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white "Mubasher Jam on LinkedIn")](https://www.linkedin.com/in/mubasherjam)
 [![Email Mubasher Jam](https://img.shields.io/badge/Email-C22B2C?style=for-the-badge&logo=gmail&logoColor=white "Email Mubasher Jam")](mailto:your-email-here)
 [![Mubasher Jam on GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white "GitHub Profile")](https://github.com/mubasherjam)
 
