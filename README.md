@@ -78,6 +78,50 @@ public class Developer
 
 ---
 
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate SVGs
+        uses: Platane/snk@v3
+        with:
+          github_user_name: hamzasial1911
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg
+
+      - name: Publish to output branch (root)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # switch to output branch first
+          git checkout -B output
+
+          # copy files to the ROOT of the branch (no 'output/' folder)
+          cp -f dist/github-contribution-grid-snake.svg ./github-contribution-grid-snake.svg
+          cp -f dist/github-contribution-grid-snake-dark.svg ./github-contribution-grid-snake-dark.svg
+
+          git add *.svg
+          git commit -m "chore: update snake" || echo "No changes to commit"
+          git push -f origin output
+
 ## 📊 GitHub Stats
 
 ![Mubasher Jam's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mubasherjam&show_icons=true&hide_border=true&bg_color=0E100A&title_color=2C22B2&icon_color=5C6247&text_color=EDE8D8&rank_icon=github "GitHub Stats for Mubasher Jam")
